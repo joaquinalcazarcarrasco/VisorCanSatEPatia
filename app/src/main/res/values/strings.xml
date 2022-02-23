@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VisorCansatEPatia</string>
+    <string name="imgTemperatura">Icono Temperatura</string>
+    <string name="imgPresion">icono Presión</string>
+    <string name="imgHumedad">icono Humedad</string>
+    <string name="imgLogo">Logotipo ePatia</string>
+    <string name="txtTituloLongitud">LON:</string>
+    <string name="txtLongitud">04º3\'38.12\'\'</string>
+    <string name="txtTituloLatitud">LAT:</string>
+    <string name="txtLatitud">N40º37\'23\'\'</string>
+    <string name="txtTituloTemperatura">TEMP</string>
+    <string name="txtTituloPresion">PRESIÓN</string>
+    <string name="txtTituloHumedad">HUM</string>
+    <string name="txtLocalizacion">LOCALIZACIÓN</string>
+    <string name="txtLanzamientoEn">LANZAMIENTO EN</string>
+    <string name="txtTemperatura">22.60</string>
+    <string name="txtPresion">1013.09hp</string>
+    <string name="txtHumedad">53</string>
+    <string name="txtCuentaAtras">25:05:81</string>
+    <string name="txtvCansatEpatia">Cansat e-Patia</string>
+</resources>

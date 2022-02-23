@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtvProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Proyecto"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgvLogo" />
+
+    <TextView
+        android:id="@+id/txtvNosotros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Nosotros"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgvLogo" />
+
+    <ImageView
+        android:id="@+id/imgvLogo"
+        android:layout_width="65dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/imgLogo"
+        app:layout_constraintEnd_toStartOf="@+id/txtvNosotros"
+        app:layout_constraintStart_toEndOf="@+id/txtvProyecto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtVLocalizacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLocalizacion"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtvCuentaAtras"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/txtvLanzamientoEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtLanzamientoEn"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgvLogo"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/txtvCuentaAtras"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/txtCuentaAtras"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtvLanzamientoEn"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/txtvCansatEpatia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/txtvCansatEpatia"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnYoutube"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnYoutube" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVLocalizacion"
+        app:srcCompat="@drawable/imagen_geolocalizacion" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/txtvTituloLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingRight="5dp"
+            android:text="@string/txtTituloLongitud"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/txtvLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingRight="2dp"
+            android:text="@string/txtLongitud" />
+
+        <TextView
+            android:id="@+id/txtvTituloLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingRight="5dp"
+            android:text="@string/txtTituloLatitud"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/txtvLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:paddingRight="10dp"
+            android:text="@string/txtLatitud" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/imgTemperatura"
+                app:srcCompat="@drawable/ico_temperatura" />
+
+            <TextView
+                android:id="@+id/txtvTituloTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTituloTemperatura"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTemperatura"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgPresion"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/imgPresion"
+                app:srcCompat="@drawable/ico_presion" />
+
+            <TextView
+                android:id="@+id/txtvTituloPresion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTituloPresion"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvPresion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPresion"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHumedad"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/imgHumedad"
+                app:srcCompat="@drawable/ico_humedad" />
+
+            <TextView
+                android:id="@+id/txtvTituloHumedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtTituloHumedad"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvHumedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtHumedad"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnYoutube2"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnYoutube2"
+        app:srcCompat="@drawable/ico_youtube" />
+
+    <ImageButton
+        android:id="@+id/imgBtnYoutube2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnYoutube3"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnYoutube3"
+        app:srcCompat="@drawable/ico_ig" />
+
+    <ImageButton
+        android:id="@+id/imgBtnYoutube3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ico_github" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
