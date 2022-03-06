@@ -18,4 +18,6 @@
     <string name="txtHumedad">53</string>
     <string name="txtCuentaAtras">25:05:81</string>
     <string name="txtvCansatEpatia">Cansat e-Patia</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps_cansat">MapsActivityCansat</string>
 </resources>

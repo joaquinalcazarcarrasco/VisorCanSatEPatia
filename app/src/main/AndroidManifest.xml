@@ -2,14 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.joaquin.visorcansatepatia">
 
+
+    <!-- incluimos los permisos necesarios para nuestra aplicaicón -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!-- permiso para la geolocalización -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- permiso de uso de internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- permiso para la geolocalización -->
+    <uses-permission android:name="android.hardware.location.gps" /> <!-- permiso para la geolocalización -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- permiso para la geolocalización -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VIsorCansatEPatia"
-        android:screenOrientation="portrait">
+        android:theme="@style/Theme.VIsorCansatEPatia">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+
+             METADATA para la funcionalidad del mapa. COLOCAR LA API KEY obtenida en
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,9 +43,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <!-- incluimos los permisos necesarios para nuestra aplicaicón -->
-    <uses-permission android:name="android.permission.INTERNET"/><!-- permiso de uso de internet -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!-- persmiso de acceso al estado de la red -->
 
 </manifest>
